@@ -11,6 +11,7 @@ import java.util.HashSet;
  * 
  * @author Jack Tsang
  */
+
 public class UniqueMorseCodeWords {
 	String[] morseEncoding = new String[] { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---",
 			"-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--",
@@ -22,8 +23,7 @@ public class UniqueMorseCodeWords {
 		for (String word : words) {
 			String temp = "";
 			for (int i = 0; i < word.length(); i++) {
-				int index = ((int) word.charAt(i)) - 97; // ASCII to alphabet
-															// index
+				int index = ((int) word.charAt(i)) - 97; // ASCII to alphabet index
 				temp += morseEncoding[index];
 			}
 			uniqueCode.add(temp);
